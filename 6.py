@@ -1,6 +1,5 @@
 values = input('Введите числа через запятую: ')
-ints_as_strings = values.split(',')
-lst = list(ints_as_strings)
-tup = tuple(ints_as_strings)
+lst = values.split(',')
+tup = tuple(lst)
 print('Список:', lst)
 print('Кортеж:', tup)
