@@ -1,4 +1,4 @@
-my_dict = {"Брошь": ["Золото", 200, 2], "Колье": ["Золото", 500, 1], "Кольцо": ["Серебро", 300, 20], "Серьги": ["Золото", 550, 1]}
+my_dict = {"брошь": ["Золото", 200, 2], "колье": ["Золото", 500, 1], "кольцо": ["Серебро", 300, 20], "серьги": ["Золото", 550, 1]}
 keys = list(my_dict.keys())
 
 while True:
@@ -24,7 +24,20 @@ while True:
         for i in range(0, len(keys)):
             print(keys[i], " - " ,my_dict.get(keys[i]))
     elif choice == 5:
-        print()
+        to_buy = input("Какое изделие вы хотели бы купить: ").lower()
+        amount = int(input("Сколько вы хотели бы купить: "))
+        if my_dict.get(to_buy)[2] < amount:
+            print("Покупка не удалась :()")
+            continue
+        else:
+            my_dict.get(to_buy)[2] -= amount 
+            print("Покупка совершена!")
+            print("Цена: ",my_dict.get(to_buy)[1]*amount)
+        number_of_product = 0;
+        for i in list(my_dict.values()):
+            number_of_product += i[2]
+        print(number_of_product, "- столько товаров осталось в изначальном списке")
     elif choice == 6:
+        print("До свидания")
         break        
     

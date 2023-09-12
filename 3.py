@@ -11,4 +11,3 @@ else:
     print (ints[0])
 print(sorted(ints, reverse = True))
         
-# print(max(i for i in map(int, input().split()) if i % 2 == 0))
