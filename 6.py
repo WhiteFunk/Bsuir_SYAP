@@ -1,5 +1,0 @@
-values = input('Введите числа через запятую: ')
-lst = values.split(',')
-tup = tuple(lst)
-print('Список:', lst)
-print('Кортеж:', tup)

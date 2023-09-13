@@ -1,5 +1,5 @@
 string = input('Введите строку: ')
-words = string.split(' ')
+words = string.split()
 max_len = 0
 for x in words:
     if len(x) % 2 == 0:
