@@ -45,6 +45,8 @@ for i in range(row):
             right -=1
         break
 
+print("Answer: ")
+
 for i in range(row):        
     for j in range(column): 
         print(A[i][j], end = ' ')

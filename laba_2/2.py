@@ -62,8 +62,10 @@ while True:
         bl = True
         while bl:
             value =input("Введите число: ")
-            if value.isdigit():
+            if value.lstrip('-').isdigit():
                 value =int(value)
+                if value < 0:
+                    value *=-1
                 bl = False
             else :
                 continue
