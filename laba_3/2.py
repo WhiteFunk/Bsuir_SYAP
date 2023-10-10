@@ -1,4 +1,4 @@
-f = open("Sotrudnyki.txt", "r")
+f = open("Sotrudnyki.txt", "r", encoding='utf-8')
 
 for worker in f:
     last_name, salary = worker.split()
