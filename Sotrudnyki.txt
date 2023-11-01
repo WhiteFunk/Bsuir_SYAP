@@ -1,7 +1,7 @@
 иванов 45
 petrov 2346
-shumskiy 1
-vecher -1
+shumskiy 2
+vecher 1
 cirikov 45
 kunevich 7347
 garkovich 2000

@@ -14,7 +14,6 @@ try:
             if int(l[2]) > int(l[3]):
                 counter +=1
                 sum +=int(l[2]) - int(l[3])
-                
             
             m[l[0]] = int(l[2]) - int(l[3])
             
